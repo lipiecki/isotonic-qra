@@ -1,6 +1,5 @@
 using Pkg
-Pkg.add(url="https://github.com/lipiecki/PostForecasts.jl")
-# add from url for a pre-release version that includes isotonic and lasso quantile regressions
+Pkg.add("PostForecasts")
 
 using PostForecasts
 mkpath("inputs")

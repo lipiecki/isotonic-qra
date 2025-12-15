@@ -4,7 +4,7 @@ const START = 20200101  # first date of the testing period
 const STOP = 20241231   # last date of the testing period
 
 # set the grid of lambda values for the lasso quantile regression
-setlambda(10.0.^(range(-2, 1, 20)))
+setLAMBDA(10.0.^(range(-2, 1, 20)))
 
 function run(::Val{:cp}, h::Int)
     pf = loadpointf("inputs/narx$(h)")
