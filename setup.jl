@@ -1,6 +1,7 @@
 using Pkg
-Pkg.add("PostForecasts")
+Pkg.instantiate()
 
+# preprocess point forecasts
 using PostForecasts
 mkpath("inputs")
 mkpath("outputs")
